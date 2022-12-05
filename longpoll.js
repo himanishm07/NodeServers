@@ -13,7 +13,7 @@ setTimeout(function run() {
       counter = obj["counter"];
       counter++;
       res = obj["response"]
-      res.write("printing counter for request" + counter + "\n");
+      res.write("Counter value " + counter + "\n");
       connections = connections.filter(function(item) {
          return item !== obj
       })
