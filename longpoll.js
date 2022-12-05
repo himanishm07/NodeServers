@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const port = 3000
 connections = []
-app.get('/date', (req, res) => {
+app.get('/', (req, res) => {
   res.setHeader("Content-Type", "text/html; charset=utf-8")
   res.setHeader("Transfer-Encoding", "chunked")
   connections.push({"response": res, "counter": 0});
